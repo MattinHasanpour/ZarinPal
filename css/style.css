@@ -120,11 +120,82 @@ header {
 .show-hamburger-menu {
   animation: fadeInDown 0.25s forwards;
 }
+#show-more-menu{
+  position: relative;
+}
+#show-more-menu div{
+  position: absolute;
+  display: none;
+  top: 0;
+  left: -35px;
+  background-color: #fff;
+  border-top: 5px solid #f8e88f;
+  border-radius: 12px;
+  padding-top: 20px;
+  padding-bottom: 20px;
+  margin-top: 23px;
+  width:183px;
+}
+#show-more-menu p {
+  margin: 0;
+  padding: 10px 20px;
+  font-size: .8rem;
+  color:#000;
+}
+#show-more-menu p:hover {
+  background-color: rgba(232, 239, 254, 0.6);
+}
+
+#show-product-menu {
+  position: relative;
+}
+.product-meno{
+  position: absolute;
+  top: 0;
+  left: -135px;
+  background-color: #fff;
+  display: none;
+  justify-content: flex-start;
+  width: 372px;
+  border-top: 5px solid #f8e88f;
+  border-radius: 12px;
+  padding-top: 5px;
+  margin-top: 23px;
+}
+.product-meno a p:first-child{
+  color: #000;
+  font-size: 0.95rem;
+  font-weight: 800;
+}
+.product-meno a p:last-child{
+  color: #000;
+  font-size: 0.7rem;
+  font-weight: 500;
+}
+.product-meno a{
+  margin: 10px;
+  display: block;
+  padding: 10px;
+  border-radius: 5px;
+}
+.product-meno a:hover{
+  background-color: rgba(232, 239, 254, 0.6);
+}
 
 @keyframes fadeInDown {
   0% {
     opacity: 0;
     transform: translateY(-100%);
+  }
+  100% {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+@keyframes showUp{
+  0%{
+    opacity: 0;
+    transform: translateY(-100px);
   }
   100% {
     opacity: 1;
